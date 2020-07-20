@@ -1,0 +1,29 @@
+.title{
+    color: darkslategrey;
+    float: right;
+    flood-opacity: initial;
+}
+#Categories{
+    border-style: solid;
+    border-color: lightpink;
+    border-right-color: lightseagreen;
+    border-right-width: thick;
+    border-radius: 3px;
+    background-color: lightgreen;
+    width: auto;
+}
+li:hover{
+    background-color:yellow;
+    color: blue;
+    font-size: medium;
+    font-weight: bold;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: chartreuse 5px 5px;
+}
+.logo{
+    width: 16%;
+    height: 16%;
+
+}
+

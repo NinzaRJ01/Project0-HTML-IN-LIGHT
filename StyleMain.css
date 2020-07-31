@@ -108,7 +108,7 @@
         
 }
 .flex-container{
-    width: 10%;
+    width: 90%;
 }
     body{
         background-color: lightcyan;
@@ -144,6 +144,9 @@
         list-style-type: none;
         box-shadow: hotpink;
         font-weight: bold;  
+    }
+    .AllConcepts{
+        width: 80%;
     }
 
 }

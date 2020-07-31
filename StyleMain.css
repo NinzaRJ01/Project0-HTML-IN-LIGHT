@@ -1,36 +1,41 @@
-.title{
-    color: darkslategrey;
-    float: right;
-    flood-opacity: initial;
-    box-shadow: rgb(220, 255, 228) 5px 5px 5px;
-    border-radius: 5rem;
-    background-color: floralwhite;
-    font-weight: normal;
+@media (min-width : 697px){
+    .title{
+        color: darkslategrey;
+        /* float: right; */
+        /* flood-opacity: initial; */
+        box-shadow: rgb(220, 255, 228) 5px 5px 5px;
+        border-radius: 5rem;
+        background-color: floralwhite;
+        font-weight: normal;
+        text-align: center;
+        width: 80%;
+        height:unset;
+        float: right;
+    }
 }
- #Categories{ 
+
+ .Categories{ 
     text-align: center;
     border-style: solid;
     border-color: lightpink;
     border-right-color: lightseagreen;
-    border-right-width: 1rem;
     border-radius: 2rem;
     background-color: lightgreen;
-    padding: 2rem;
+    width: 96%;
+    float: inline-end;
+    padding: 0.75rem;
 }  
 .logo{
     width: 16%;
-    height: 16%;
+    max-height: 5rem;
+    float: inline-start;
 
 }
-.AllConcepts li ul{
-    display: none;
-}
+
 .Concepts:hover{
-    align-content: center;
     text-align: center;
     color: blue;
     border-radius: 5px;
-    list-style-type: none;
     box-shadow: hotpink 0.4rem 0.4rem 0.4rem;
     font-weight: bold;
     background-color:rgba(60, 204, 16, 0.493);
@@ -39,21 +44,109 @@
 .Concepts{
     background-color: rgb(238, 240, 235);
     padding: 0.7rem;
-    border: saddlebrown 0.025rem ;
-    border-style: solid;
+     border: saddlebrown 0.025rem ;
+    border-style: solid; 
     text-align: center;
     border-radius: 2rem;
+    float: inline-start;
+    width: 96%;
+    list-style: none;
 }
 
-.AllConcepts li:hover>ul{
-    display: contents;
-    color: blue;
-    border-radius: 5px;
-    border-radius: 0.5rem;
-    list-style-type: none;
-    box-shadow: hotpink;
-    font-weight: bold;
+.BackButton{
+    text-align: center;
+    background-color: lightgrey;
+    font-weight: bolder;
+    width: 80%;
+    float: right;
+    box-sizing: content-box;
+    height: fit-content; 
 }
-.AllConcepts{
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    float: left;
+}
+.flex-container > .Menu >div{
+    border: yellowgreen;
+    border-style: solid;
+    border-width: thick;
+    font-size-adjust: inherit;
+    text-align: center;
+    padding: 0.4rem; 
+    
+    width: 100%;
+} 
+.flex-container > .Menu > img{
+    width: fit-content;
+} 
+.ContentTags{
+    background-color: lightsteelblue;
+    border: limegreen double thick;
+     width: 80%;
+     float: right;
+     box-sizing: content-box;
+}
+.Tags{
+    font-size: large;
+    box-shadow: grey 5px 5px 5px;
+    border-radius: 3rem;
+    background-color: lightseagreen;
+}
+.Tag_Description{
+    text-align: left;
+}
+.Imp{
+}
+@media (max-width: 697px){
+    .flex-container > .Menu > div{
+        display: none;
+    }
+    .flex-container > .Menu:hover >div{
+        display: flex;
+        
+}
+.flex-container{
+    width: 10%;
+}
+    body{
+        background-color: lightcyan;
+        background-color: floralwhite;
+        font-weight: normal;
+        text-align: center;
+    }
+    .title{
+        box-shadow: rgb(220, 255, 228) 5px 5px 5px;
+        border-radius: 5rem;
+        background-color: floralwhite;
+        font-weight: normal;
+        text-align: center;
+        color: darkslategrey;
+    }
+    #MenuImage{
+        width: min-content;
+        border-radius: 0.3rem;
+        float: left;
+        border: thick gray solid;
+    }
+    .ContentTags{
+    }
+
+    ul li > ul{
+    display: none;
+    }
+    ul li:hover>ul{
+        display: contents;
+        color: blue;
+        border-radius: 5px;
+        border-radius: 0.5rem;
+        list-style-type: none;
+        box-shadow: hotpink;
+        font-weight: bold;  
+    }
+
+}
+ul{
     list-style: none;
 }

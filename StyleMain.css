@@ -31,7 +31,6 @@
     float: inline-start;
 
 }
-
 .Concepts:hover{
     text-align: center;
     color: blue;
@@ -67,6 +66,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     float: left;
+    width: min-content ;
 }
 .flex-container > .Menu >div{
     border: yellowgreen;
@@ -75,8 +75,6 @@
     font-size-adjust: inherit;
     text-align: center;
     padding: 0.4rem; 
-    
-    width: 100%;
 } 
 .flex-container > .Menu > img{
     width: fit-content;
@@ -107,9 +105,9 @@
         display: flex;
         
 }
-.flex-container{
-    width: 90%;
-}
+    .flex-container{
+        width: 90%;
+    }
     body{
         background-color: lightcyan;
         background-color: floralwhite;

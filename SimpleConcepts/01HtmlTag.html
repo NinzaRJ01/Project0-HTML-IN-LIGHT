@@ -5,6 +5,7 @@
     </head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../StyleMain.css">
+    <link href="../PrismSnippetTheme/prism.css" rel="stylesheet" />
     <body>
         <a href="http://www.w3.org/html/logo/">
             <img class ="logo" src="../Images/html5-badge-h-css3-semantics.png" alt="HTML5 Powered with CSS3 / Styling, and Semantics">
@@ -32,12 +33,48 @@
             <div class = "ContentTags">
                 <h3 class = "Tags">&lt;!DOCTYPE html&gt;</h3>
                 <p class = "Tag_Description">
-                    DOCTYPE html tag tells the compiler (in most cases : Browsers) that given file format is of <a class="Imp">Html5</a> or written in <a class="Imp">Html5</a>. 
-                    It is helpful for browser because there are different attributes and methods associated with <a class="Imp">Html5</a> only which are not avaiable in previous versions of <a class="Imp">Html5</a> (example: header, footer and many other tags).
+                    DOCTYPE html tag tells the interpreter (in most cases : Browsers) that given file format is of <a class="Imp">Html5</a> or written in <a class="Imp">Html5</a>. 
+                    It is helpful for browser because there are different attributes and behaviors associated with <a class="Imp">Html5</a> only which are not available in previous versions of <a class="Imp">Html5</a> (example: header, footer and many other tags).
                 </p>
+                <h5>
+                    Demonstration Example :
+                </h5>
+                <div class="make-snippet"> <!-- code  -->
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;&lt;!--Tells The Language Of Content In Html Page--&gt;
+&lt;/html&gt;
+                </div>
+                
+                
             </div> 
             <footer class="BackButton">
                 <a class = "BackButton"href="../">Back</a>
             </footer>
     </body>
+    <script src="../PrismSnippetTheme/prism.js"></script>
+    <script>
+        (function(){
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+
+    var list = document.querySelectorAll('.make-snippet');
+
+    [].forEach.call(list, function(el) {
+      var snippet = el.innerHTML.replace(/</g,'&lt;');
+          snippet = snippet.replace(/ /g,'&nbsp;');
+      var code = '<pre class="language-markup"><code>'+snippet+'</pre></code>';
+      el.insertAdjacentHTML('afterend',code);
+    });
+
+    
+    // if your page has prism.js you get syntax highlighting
+    if(window.Prism){
+      Prism.highlightAll(false);
+    }
+    list.forEach((l)=>l.innerHTML="");
+  });
+
+})();
+
+    </script>
 </html>

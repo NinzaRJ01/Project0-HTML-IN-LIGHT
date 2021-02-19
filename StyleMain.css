@@ -101,10 +101,7 @@
     .flex-container > .Menu > div{
         display: none;
     }
-    .flex-container > .Menu:hover >div{
-        display: flex;
-        
-}
+    
     .flex-container{
         width: 90%;
     }

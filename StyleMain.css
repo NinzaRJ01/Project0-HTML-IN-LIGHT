@@ -66,7 +66,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     float: left;
-    width: min-content ;
+    
+    
 }
 .flex-container > .Menu >div{
     display: none;
@@ -83,9 +84,10 @@
 .ContentTags{
     background-color: lightsteelblue;
     border: limegreen double thick;
-     width: 80%;
+    
      float: right;
      box-sizing: content-box;
+     grid-row = 1/ span 0.5;
 }
 .Tags{
     font-size: large;
@@ -96,12 +98,14 @@
 .Tag_Description{
     text-align: left;
 }
-.Imp{
+.content-grid{
+    display: grid  inline;
+    grid-template-columns: auto auto;
 }
 @media (max-width: 697px){
-    /* .flex-container > .Menu > div{
+    .flex-container > .Menu > div{
         display: none;
-    } */
+    }
     
     .flex-container{
         width: 90%;

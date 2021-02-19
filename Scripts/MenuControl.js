@@ -1,3 +1,4 @@
+// For Information Section WebPages
 let menu = document.querySelector(".Menu");
 let isOpened = true;
 let menuContentList = document.querySelectorAll(".MenuContent");

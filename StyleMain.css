@@ -1,5 +1,6 @@
 @media (min-width : 697px){
     .title{
+        
         color: darkslategrey;
         /* float: right; */
         /* flood-opacity: initial; */
@@ -32,25 +33,24 @@
 
 }
 .Concepts:hover{
-    text-align: center;
+    /* text-align: center; */
     color: blue;
-    border-radius: 5px;
+    border-radius: 6px;
     box-shadow: hotpink 0.4rem 0.4rem 0.4rem;
     font-weight: bold;
     background-color:rgba(60, 204, 16, 0.493);
     padding: 0.9rem;
 }
 .Concepts{
+    display: flex;
     background-color: rgb(238, 240, 235);
     padding: 0.7rem;
      border: saddlebrown 0.025rem ;
     border-style: solid; 
-    text-align: center;
-    border-radius: 2rem;
-    float: inline-start;
-    width: 96%;
-    list-style: none;
+    text-align:left;
+    border-radius: 50px;
 }
+    
 
 .BackButton{
     text-align: center;
@@ -98,9 +98,9 @@
 .Imp{
 }
 @media (max-width: 697px){
-    .flex-container > .Menu > div{
+    /* .flex-container > .Menu > div{
         display: none;
-    }
+    } */
     
     .flex-container{
         width: 90%;
@@ -128,10 +128,10 @@
     .ContentTags{
     }
 
-    ul li > ul{
+    /* ul li > ul{
     display: none;
-    }
-    ul li:hover>ul{
+    } */
+    /* ul li:hover>ul{
         display: contents;
         color: blue;
         border-radius: 5px;
@@ -139,7 +139,8 @@
         list-style-type: none;
         box-shadow: hotpink;
         font-weight: bold;  
-    }
+    }  
+    */
     .AllConcepts{
         width: 80%;
     }

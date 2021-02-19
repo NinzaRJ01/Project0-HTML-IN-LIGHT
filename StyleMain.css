@@ -69,6 +69,7 @@
     width: min-content ;
 }
 .flex-container > .Menu >div{
+    display: none;
     border: yellowgreen;
     border-style: solid;
     border-width: thick;

@@ -1,6 +1,6 @@
 // For Information Section WebPages
 let menu = document.querySelector(".Menu");
-let isOpened = true;
+let isOpened = false;
 let menuContentList = document.querySelectorAll(".MenuContent");
 menu.addEventListener('click',()=>{
     

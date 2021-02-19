@@ -105,6 +105,10 @@
     /* grid-template-columns: min-content auto; */
     flex-direction: row;
 }
+.Menu{
+    display: flex;
+    flex-direction: column;
+}
 @media (max-width: 697px){
     /* .flex-container > .Menu > .MenuContent{
         display: none;

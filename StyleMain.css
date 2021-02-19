@@ -66,10 +66,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     float: left;
+    width: auto;
     
     
 }
-.flex-container > .Menu >div{
+.flex-container > .Menu > .MenuContent{
     display: none;
     border: yellowgreen;
     border-style: solid;
@@ -87,7 +88,8 @@
     
      float: right;
      box-sizing: content-box;
-     grid-row = 1/ span 0.5;
+     width: auto;
+     height: min-content;
 }
 .Tags{
     font-size: large;
@@ -99,13 +101,14 @@
     text-align: left;
 }
 .content-grid{
-    display: grid  inline;
-    grid-template-columns: auto auto;
+    display: flex  inline;
+    /* grid-template-columns: min-content auto; */
+    flex-direction: row;
 }
 @media (max-width: 697px){
-    .flex-container > .Menu > div{
+    /* .flex-container > .Menu > .MenuContent{
         display: none;
-    }
+    } */
     
     .flex-container{
         width: 90%;

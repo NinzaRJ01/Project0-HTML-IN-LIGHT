@@ -1,17 +1,11 @@
 @media (min-width : 697px){
     .title{
-        
         color: darkslategrey;
-        /* float: right; */
-        /* flood-opacity: initial; */
         box-shadow: rgb(220, 255, 228) 5px 5px 5px;
         border-radius: 5rem;
         background-color: floralwhite;
         font-weight: normal;
         text-align: center;
-        width: 80%;
-        height:unset;
-        float: right;
     }
 }
 
@@ -56,18 +50,11 @@
     text-align: center;
     background-color: lightgrey;
     font-weight: bolder;
-    width: 80%;
-    float: right;
-    box-sizing: content-box;
-    height: fit-content; 
 }
 .flex-container{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    float: left;
-    width: auto;
-    
+    float: left; 
     
 }
 .flex-container > .Menu > .MenuContent{
@@ -84,12 +71,7 @@
 } 
 .ContentTags{
     background-color: lightsteelblue;
-    border: limegreen double thick;
-    
-     float: right;
-     box-sizing: content-box;
-     width: auto;
-     height: min-content;
+    border: limegreen double thick;   
 }
 .Tags{
     font-size: large;
@@ -109,50 +91,17 @@
     display: flex;
     flex-direction: column;
 }
-@media (max-width: 697px){
-    /* .flex-container > .Menu > .MenuContent{
-        display: none;
-    } */
-    
-    .flex-container{
-        width: 90%;
-    }
-    body{
-        background-color: lightcyan;
-        background-color: floralwhite;
-        font-weight: normal;
-        text-align: center;
-    }
-    .title{
-        box-shadow: rgb(220, 255, 228) 5px 5px 5px;
-        border-radius: 5rem;
-        background-color: floralwhite;
-        font-weight: normal;
-        text-align: center;
-        color: darkslategrey;
-    }
+@media (max-width: 697px){ 
     #MenuImage{
         width: min-content;
         border-radius: 0.3rem;
         float: left;
         border: thick gray solid;
     }
-    .ContentTags{
+    .content-grid{
+        flex-direction: column;
+        width: 100%;
     }
-
-    /* ul li > ul{
-    display: none;
-    } */
-    /* ul li:hover>ul{
-        display: contents;
-        color: blue;
-        border-radius: 5px;
-        border-radius: 0.5rem;
-        list-style-type: none;
-        box-shadow: hotpink;
-        font-weight: bold;  
-    }  
-    */
     .AllConcepts{
         width: 80%;
     }

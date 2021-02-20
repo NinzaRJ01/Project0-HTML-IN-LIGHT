@@ -1,4 +1,4 @@
-@media (min-width : 697px){
+
     .title{
         color: darkslategrey;
         box-shadow: rgb(220, 255, 228) 5px 5px 5px;
@@ -6,8 +6,10 @@
         background-color: floralwhite;
         font-weight: normal;
         text-align: center;
+        width: 80%;
+        /* float: right; */
     }
-}
+
 
  .Categories{ 
     text-align: center;
@@ -83,7 +85,7 @@
     text-align: left;
 }
 .content-grid{
-    display: flex  inline;
+    display: flex;
     /* grid-template-columns: min-content auto; */
     flex-direction: row;
     width: 100%;
@@ -92,6 +94,9 @@
     display: flex;
     flex-direction: column;
 }
+
+
+/* Of Width Less than 697 */
 @media (max-width: 697px){ 
     #MenuImage{
         width: min-content;
@@ -110,7 +115,4 @@
         width: 100%;
     }
 
-}
-ul{
-    list-style: none;
 }
